@@ -40,7 +40,7 @@ string enkripsi(int key, char str[])
     cout << "Enkripsi : " << str << endl;
 }
 
-string deskripsi(int key, char str[])
+string dekripsi(int key, char str[])
 {
     char temp;
     for (int i = 0; str[i] != '\0'; i++)
@@ -69,7 +69,7 @@ string deskripsi(int key, char str[])
             str[i] = temp;
         }
     }
-    cout << "Deskripsi : " << str << endl;
+    cout << "Dekripsi : " << str << endl;
 }
 
 int main()
@@ -82,7 +82,7 @@ int main()
     {
         cout << "=-=-=-=-=-=-= Shift Cipher =-=-=-=-=-=-=\n";
         cout << "1. Enkripsi\n";
-        cout << "2. Deskripsi\n";
+        cout << "2. Dekripsi\n";
         cout << "3. Exit\n";
         cout << "Masukan Nomor  : ";
         cin >> x;
@@ -105,7 +105,7 @@ int main()
             cin.getline(str, sizeof(str));
             cout << "Masukan Key    : ";
             cin >> key;
-            deskripsi(key, str);
+            dekripsi(key, str);
             cout << endl;
             break;
         default:
